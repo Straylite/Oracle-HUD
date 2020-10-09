@@ -34,6 +34,53 @@ gui.drawImage(loc.."hud.png",0,0)
 
 --Items
 gui.drawImage(i_loc.. button.a .. ".png",11,0)
+
+
+if button.a == 0x1C then
+    if memory.readbyte(0x02002AF6) >= 0x20 and memory.readbyte(0x02002AF6) <= 0x31 then
+        gui.drawImage(i_loc.. memory.readbyte(0x02002AF6) .. ".png",11,0)
+    end
+end
+if button.a == 0x1D then
+    if memory.readbyte(0x02002AF7) >= 0x20 and memory.readbyte(0x02002AF7) <= 0x31 then
+        gui.drawImage(i_loc.. memory.readbyte(0x02002AF7) .. ".png",11,0)
+    end
+end
+if button.a == 0x1E then
+    if memory.readbyte(0x02002AF8) >= 0x20 and memory.readbyte(0x02002AF8) <= 0x31 then
+        gui.drawImage(i_loc.. memory.readbyte(0x02002AF6) .. ".png",11,0)
+    end
+end
+if button.a == 0x1F then
+    if memory.readbyte(0x02002AF9) >= 0x20 and memory.readbyte(0x02002AF9) <= 0x31 then
+        gui.drawImage(i_loc.. memory.readbyte(0x02002AF9) .. ".png",11,0)
+    end
+end
+if button.b == 0x1C then
+    if memory.readbyte(0x02002AF6) >= 0x20 and memory.readbyte(0x02002AF6) <= 0x31 then
+        gui.drawImage(i_loc.. memory.readbyte(0x02002AF6) .. ".png",51,0)
+    end
+end
+if button.b == 0x1D then
+    if memory.readbyte(0x02002AF7) >= 0x20 and memory.readbyte(0x02002AF7) <= 0x31 then
+        gui.drawImage(i_loc.. memory.readbyte(0x02002AF7) .. ".png",51,0)
+    end
+end
+if button.b == 0x1E then
+    if memory.readbyte(0x02002AF8) >= 0x20 and memory.readbyte(0x02002AF8) <= 0x31 then
+        gui.drawImage(i_loc.. memory.readbyte(0x02002AF8) .. ".png",51,0)
+    end
+end
+if button.b == 0x1F then
+    if memory.readbyte(0x02002AF9) >= 0x20 and memory.readbyte(0x02002AF9) <= 0x31 then
+        gui.drawImage(i_loc.. memory.readbyte(0x02002AF9) .. ".png",51,0)
+    end
+end
+
+
+
+
+
 gui.drawImage(i_loc.. button.b .. ".png",51,0)
 
 if button.a == 0x07 then gui.pixelText(23,9,memory.readbyte(0x02002AEC), "white", 0x70000000) end
