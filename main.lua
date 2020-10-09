@@ -25,7 +25,7 @@ end
 end
     
 button = {b = memory.readbyte(0x02002AF4), a = memory.readbyte(0x02002AF5)}
-rupee = memory.read_u16_le(0x0200AF0E)
+rupee = memory.read_u16_le(0x02002B00)
 
 space(0,16,0,0)
 
