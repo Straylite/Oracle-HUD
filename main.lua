@@ -43,8 +43,8 @@ if button.b == 0x08 then gui.pixelText(23,9,memory.readbyte(0x02002AEC), "white"
 
 if button.a == 0x09 then gui.pixelText(23,9,memory.readbyte(0x02002AED), "white", 0x70000000) end
 if button.b == 0x09 then gui.pixelText(63,9,memory.readbyte(0x02002AED), "white", 0x70000000) end
-if button.a == 0x09 then gui.pixelText(20,9,memory.readbyte(0x02002AED), "white", 0x70000000) end
-if button.b == 0x09 then gui.pixelText(23,9,memory.readbyte(0x02002AED), "white", 0x70000000) end
+if button.a == 0x0A then gui.pixelText(20,9,memory.readbyte(0x02002AED), "white", 0x70000000) end
+if button.b == 0x0A then gui.pixelText(23,9,memory.readbyte(0x02002AED), "white", 0x70000000) end
 
 drawMenu(loc,tostring(r.x/100) .. ".png", 78, 8)
 drawMenu(loc,tostring(r.y/10) .. ".png", 86, 8)
