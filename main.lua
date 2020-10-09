@@ -33,8 +33,8 @@ space(0,16,0,0)
 gui.drawImage(loc.."hud.png",0,0)
 
 --Items
-gui.drawImage(i_loc.. button.b .. ".png",11,0)
-gui.drawImage(i_loc.. button.a .. ".png",51,0)
+gui.drawImage(i_loc.. button.a .. ".png",11,0)
+gui.drawImage(i_loc.. button.b .. ".png",51,0)
 
 
 drawMenu(loc,tostring(r.x/100) .. ".png", 78, 8)
